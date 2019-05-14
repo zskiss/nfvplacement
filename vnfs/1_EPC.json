@@ -1,0 +1,47 @@
+{
+  "ID" : 1,
+  "BW" : 1,
+  "PRIO" : 1,
+  "NFS": [
+    {
+      "ID": "HSS",
+      "CPU": "5",
+      "RAM": "20"
+    },
+	{
+      "ID": "MME",
+      "CPU": "5",
+      "RAM": "20"
+    },
+    {
+      "ID": "SGW",
+      "CPU": "10",
+      "RAM": "10"
+    },
+    {
+      "ID": "PGW",
+      "CPU": "10",
+      "RAM": "10"
+    }
+  ],
+  "VLINKS" : [
+    {
+      "ID" : 1,
+      "SRC" : "HSS",
+      "DST" : "MME",
+      "BIDIR" : true
+    },
+    {
+      "ID" : 2,
+      "SRC" : "MME",
+      "DST" : "SGW",
+      "BIDIR" : true
+    },
+    {
+      "ID" : 3,
+      "SRC" : "SGW",
+      "DST" : "PGW",
+      "BIDIR" : true
+    }
+  ]
+}

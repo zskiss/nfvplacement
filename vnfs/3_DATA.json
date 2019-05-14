@@ -1,0 +1,58 @@
+{
+  "ID" : 3,
+  "BW" : 0.5,
+  "PRIO" : 3,
+  "NFS": [
+    {
+      "ID": "SRC",
+      "CPU": "10",
+      "RAM": "10"
+    },
+    {
+      "ID": "FW1",
+      "CPU": "5",
+      "RAM": "5"
+    },
+    {
+      "ID": "FW2",
+      "CPU": "5",
+      "RAM": "5"
+    },
+    {
+      "ID": "FW3",
+      "CPU": "5",
+      "RAM": "5"
+    },
+    {
+      "ID": "DST",
+      "CPU": "10",
+      "RAM": "10"
+    }
+  ],
+  "VLINKS" : [
+    {
+      "ID" : 1,
+      "SRC" : "SRC",
+      "DST" : "FW1",
+      "BIDIR" : false
+    },
+    {
+      "ID" : 2,
+      "SRC" : "FW1",
+      "DST" : "FW2",
+      "BIDIR" : false
+    },
+    {
+      "ID" : 3,
+      "SRC" : "FW2",
+      "DST" : "FW3",
+      "BIDIR" : false
+    },
+    {
+      "ID" : 4,
+      "SRC" : "FW3",
+      "DST" : "DST",
+      "BIDIR" : false
+    }
+  ]
+}
